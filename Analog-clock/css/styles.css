@@ -1,0 +1,73 @@
+/*Cancelling out The browser effect */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*For body styling*/
+body{
+    height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            background-image: linear-gradient(
+                70deg, rgb(91, 149, 225), white);
+}
+/*This is for making clock*/
+.clock {
+    width: 40vw;
+    height: 40vw;
+    background-image: linear-gradient(
+        70deg, rgb(61, 106, 174), rgb(131, 227, 232));
+    background-size: cover;
+    box-shadow: 0 3em 5.8em;
+    border-radius: 50%;
+    position: relative;
+}
+.hr,
+.min,
+.sec {
+    width: 1%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    z-index: 2;
+    border-radius: 2em;
+}
+
+.pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1em;
+    height: 1em;
+    background: rgb(183, 173, 239);
+    border: 2px solid #ffffff;
+    border-radius: 10em;
+    margin: auto;
+    z-index: 10;
+}
+
+/* Different length of different hands of clock */        
+.hr {
+    height: 25%;
+    background-color: #f3ecec;
+}
+
+.min {
+    height: 30%;
+    background-color: #efece8;
+}
+
+.sec {
+    height: 40%;
+    background-color: #294e75;
+    transform-origin: 50% 85%;
+}
+
